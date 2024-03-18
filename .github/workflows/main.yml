@@ -20,7 +20,7 @@ jobs:
         distribution: 'adopt'
 
     - name: Compile Java
-      run: javac src/Main.java
+      run: javac src/*.java -d build
 
     - name: Run Java
-      run: java -cp src Main
+      run: java -cp build Main
